@@ -1,0 +1,15 @@
+Create a dedicated directory for "Modules" under "terraform_app" folder
+Under "Modules"
+	* create "VPC" folders
+	* create "ec2" folders
+Under "modules -> VPC" folder
+	* create "networking.tf" and provide necessary resources for VPC from registery.
+	* create vars.tf for "networking.tf" (To re-use the code)
+Under "modules -> ec2" folder
+	* create "instances.tf" and provide necessary resources for EC2 from registery.
+	* create vars.tf for "instances.tf" (To re-use the code)
+Now, create different folder for enivornments (prod, dev)
+under prod 
+ * create a main.tf file
+ * provide all the modules and variables details form the respective .tf files ("networking.tf, vars.tf" & "instances.tf, vars.tf")
+
